@@ -126,7 +126,7 @@ class BankingApplicationTests {
         transaction.setCreatedAt(LocalDateTime.now());
         transaction.setUpdatedAt(LocalDateTime.now());
         transaction.setType(TransactionType.DEPOSIT);
-        transaction.setStatus(TransactionStatus.SUCCESS);
+        transaction.setStatus(TransactionStatus.PENDING);
         // 1. 模拟 Repository 行为
         when(transactionRepository.findByReferenceId(this.updateVO.getReferenceId(), this.updateVO.getUserUid()))
                 .thenReturn(Optional.of(transaction));
