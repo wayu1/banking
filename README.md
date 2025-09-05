@@ -107,7 +107,7 @@ RequestBody
 }
 ```
 
-#### 3.删除交易
+#### 4.分页查询交易
 URL:http://localhost:8080/bank/transaction/pageTransaction
 
 Request:GET
